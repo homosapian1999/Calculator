@@ -4,3 +4,69 @@
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
+
+/* body {
+  display: flex;
+  justify-content: center;
+  
+} */
+
+.container {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  /* Making it center */
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 256px;
+  text-align: center;
+  border: 10px solid dff0f8;
+  background-color: #dff0f8;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 2px 1px 2px 1px;
+}
+
+.keypad {
+  display: grid;
+  /* grid-template-columns: repeat(no-of coloumns, 1fer= each column of equal width); */
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-auto-rows: minmax(min, max); */
+  grid-auto-rows: minmax(60px, auto);
+}
+
+input[type="text"] {
+  height: 75px;
+  width: 248px;
+  background-color: #dff0f8;
+  border: 0px;
+  color: #262834;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+#clear {
+  /* grid-column: start/end; */
+  grid-column: 1/3;
+  color: #262834;
+  color: #dff0f8;
+}
+
+#result {
+  grid-column: 3/5;
+  color: #dff0f8;
+  font-size: 25px;
+  grid-row: 5;
+}
+
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #0f5252;
+  color: #dff0f8;
+  cursor: pointer;
+  font-weight: 500;
+}
