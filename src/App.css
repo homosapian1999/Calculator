@@ -5,11 +5,9 @@
   font-size: 18px;
 }
 
-/* body {
-  display: flex;
-  justify-content: center;
-  
-} */
+body {
+  background-color: #ddf0f7;
+}
 
 .container {
   top: 50%;
